@@ -44,6 +44,19 @@
       bottom: 6%;
     }
 
+    #syusseki-card > .kuma-stamp {
+      background-image: url(/img/出席くまさんスタンプ.png);
+      background-size: contain;
+      /* width: 1075px; */
+      width: calc((100vw / 2079) * 1075 * 0.2);
+      /* height: 1518px; */
+      height: calc(1518 / 1075 * ((100vw / 2079) * 1075 * 0.2));
+
+      position: absolute;
+      top: 25.5%;
+      left: 44.5%;
+    }
+
     @font-face {
       font-family: 'MPLUSRounded1c';
       font-style: normal;
@@ -64,6 +77,7 @@
 
   <!-- Add your site or application content here -->
   <div id="syusseki-card">
+    <div class="kuma-stamp"></div>
     <p id="your-name" contenteditable>みずのDIY</p>
   </div>
 
