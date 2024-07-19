@@ -19,13 +19,43 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#187dfe">
+  <meta name="theme-color" content="#1694ff">
 
   <style>
     #syusseki-card {
       background-image: url('/img/みずののなつやすみ出席カード.png');
-      width: 2079px;
-      height: 2953px;
+      background-size: contain;
+      /* width: 2079px; */
+      width: 100vw;
+      /* height: 2953px; */
+      height: calc(2953 / 2079 * 100vw);
+      position: absolute;
+    }
+
+    #syusseki-card > #your-name {
+      font-family: 'MPLUSRounded1c';
+      font-size: calc(5em + 0.5vw);
+      font-weight: x-bold;
+      color: #1694ff;
+
+      margin: 0;
+      position: absolute;
+      left: 60%;
+      bottom: 6%;
+    }
+
+    @font-face {
+      font-family: 'MPLUSRounded1c';
+      font-style: normal;
+      font-weight: bold;
+      src: url(/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: 'MPLUSRounded1c';
+      font-style: normal;
+      font-weight: x-bold;
+      src: url(/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-ExtraBold.ttf);
     }
   </style>
 </head>
@@ -33,7 +63,9 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div id="syusseki-card"></div>
+  <div id="syusseki-card">
+    <p id="your-name" contenteditable>みずのDIY</p>
+  </div>
 
   <script>
     // Remove no-js classes
