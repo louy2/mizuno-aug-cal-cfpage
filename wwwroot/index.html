@@ -11,21 +11,31 @@
   <meta property="og:title" content="みずののなつやすみ出席カード">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:image" content="/icon.png">
+  <meta property="og:image:alt" content="/img/みずのicon-351.png">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#187dfe">
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <script>
+    // Remove no-js classes
+    document.addEventListener('DOMContentLoaded', function() {
+      var nojsElList = document.getElementsByClassName('no-js');
+      for (var el of nojsElList) {
+        el.classList.remove('no-js');
+      }
+    })
+  </script>
   <script src="js/app.js"></script>
 
 </body>
